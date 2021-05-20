@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <style>
+            header{
+    padding-bottom:15px;
+    margin-top: 0px;
+      height:100px;
+      width:100%;
+      background-color:#4169E1;
+      position:absolute;
+    }
+    #image{
+        height:500px;
+        width:660px;
+        padding-top: 200px;
+    }
+    footer{
+   background-color:rgb(0,0,0,0.9);
+     color:grey;
+     padding-left:0px;
+     padding-bottom:0px;
+       padding-top:0px;
+       padding-bottom: 0px;
+     width:100%;
+     margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-top: 0px;
+   }
+   #button{
+    background:#4169E1;
+    border-radius: 5px;
+    border-color: #ADD8E6;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom:30px;
+  margin-left: 80px;
+  color:#ADD8E6;
+  align-items: center;
+   }
+        </style>
+    </head>
+    <body>
+        <header>
+            <center><font style="color:#ADD8E6;font-size:60px;font-stretch:condensed;">IMAGE OUTPUT</font></center>
+            <button id=button><a href="/hellos">Home</a></button>
+            </br>
+            </br>
+            </br>
+        </header>
+            
+        <div id=image>
+        <img src="/through_imagess" height="500px" width="660px">
+    </div>
+
+        <!---->
+        <!--{% with message=get_flashed_messages() %}
+            {% if message %}
+                {% for msg in message%}
+                    <h2>{{msg}}</h2>
+                {% endfor %}
+            {% else %}
+                <h2>Capacity is Stable</h2>
+            {% endif %}
+        {% endwith %}-->
+       <footer>
+            <ul>
+          <li><a style= "color:grey" href="https://www.gmail.com">GMAIL</a></li>
+          </br>
+          <li><a style= "color:grey" href="https://www.facebook.com">FACEBOOK</a></li>
+          </br>
+          <li><a style= "color:grey" href="https://www.instagram.com">instagram</a></li>
+            </br>
+          </footer>
+    </body>
+</html>

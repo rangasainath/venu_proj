@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lift Capacity Management</title>
+    <style>
+      *{
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+        }
+         .container{
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            position: relative;
+          }
+          .title{
+            background-color: blueviolet;
+            width: 100%;
+            height: 80px;
+            box-shadow: 0px 0px 10px 10px gray;
+        }
+        .title-text{
+            width: 500px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 30px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: azure;
+            margin-left:100px; 
+            padding-left:13px; 
+            transform: translateY(10px);
+            text-transform: uppercase;
+            border: 1px solid black;
+            border-radius: 40px;
+            border-left-width: 0;
+            border-right-width: 0;
+            border-top-width: 0;
+            box-shadow: 0 8px 6px -6px rgb(0, 0, 0);
+        }
+        #textmessagevideo{
+       display:inline-block;
+       height:360px;
+       width: 620px;
+       padding-top: 10px;
+       padding-left: 50px;
+       align-items: center;
+
+   }
+   #textmessage{
+       display: flex;
+   }
+   #textmessage > *{
+       flex-basis: 100%;
+   }
+         
+    footer{
+   background-color:rgb(0,0,0,0.9);
+     color:grey;
+     padding-left:0px;
+     padding-bottom:0px;
+       padding-top:0px;
+       padding-bottom: 0px;
+     width:100%;
+     margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-top: 0px;
+
+   }
+       </style>
+   
+</head>
+<body>
+  <div class="container">
+        <div class="title">
+            <p class="title-text">Video Output</p>
+        </div>
+
+    <div id=textmessagevideo>
+    <div id=textmessage>
+<div id=text><h2>Video After Processing</h2></div>
+    <div id=capacity>{% if capacity %}
+        <h2>limit:{{capacity}}</h2>
+    {% else %}
+        <h2>No data</h2>
+    {% endif %}</div>
+</div>
+<div id=video>
+<img src="/detecting" type="video/webm" height="342" width="608">
+</div>
+</div>
+        
+ <br>
+       <footer>
+        <ul>
+      <li><a style= "color:azure" href="https://www.gmail.com">GMAIL</a></li>
+      </br>
+      <li><a style= "color:azure" href="https://www.facebook.com">FACEBOOK</a></li>
+      </br>
+      <li><a style= "color:azure" href="https://www.instagram.com">instagram</a></li>
+        </br>
+      <li>PLEASE FOLLOW</li>
+      </br>
+      </ul>
+      <ul>
+      <!--<li>mascellenios </li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>
+      <li>some thing</li>-->
+      </ul>
+      </footer>
+    
+            
+</div>
+</body>
+</html>

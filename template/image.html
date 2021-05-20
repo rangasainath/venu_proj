@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FLASK</title>
+       <!--<link rel="stylesheet" href="{{ url_for('static', filename='body.css') }}">-->
+       <style>
+
+            #imageform{
+               display:flex;
+               padding-top: 120px;
+               padding-left: 200px;
+                      }
+            #imageform > *{
+               flex-basis:100%;
+           }
+           #form{
+            height:50%;
+            padding-top:140px;
+            padding-left:0px;
+           }
+           form{
+    border:1px solid grey;
+    padding-left:20px;
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;
+    margin-left:0px;
+    margin-right:0px;
+    background:rgb(0,0,0,0);
+    border-radius: 20px;
+    width:150px;
+  }
+  input{
+      background-color:rgb(0,0,0,0);
+  width:100%;
+  margin-bottom:30px;
+  margin-right: 10px;
+
+border:none;
+border-bottom:1px solid #ADD8E6;
+outline:none;
+font-size:16px;
+font-family:'Times New Roman';
+color:orange;
+  }
+
+  #label1{
+    font-family:'Times New Roman';
+    position:absolute;
+    margin-left:10px;
+    margin-top:-30px;
+    margin-right:20px;
+    color:#ADD8E6;
+  }
+  #label2{
+    font-family:'Times New Roman';
+    position:absolute;
+    margin-left:10px;
+    margin-top:-20px;
+    margin-right:20px;
+    color:#ADD8E6;
+  }
+  
+  .form .input .label{
+  
+    transition: .5%;
+  }
+  .form .input:focus ~label
+  {
+    top:-10px;
+  }
+  form input[type="file"]{
+    background:#4169E1;
+    border-radius: 5px;
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-bottom:30px;
+  margin-left: 80px;
+  height:30px;
+  width:60px;
+  color:#ADD8E6;
+  align-items: center;
+  font-family: 'Times New Roman', Times, serif;
+    font-weight: lighter;
+    font-size: 10px;
+     }
+     form input[type="number"]{
+  align-items: center;
+     }
+  form input[type="submit"]{
+    background:#4169E1;
+    border-radius: 5px;
+  padding-top:0px;
+  padding-bottom:0px;
+  margin-bottom:30px;
+  margin-left: 80px;
+  height:30px;
+  width:60px;
+  color:#ADD8E6;
+  align-items: center;
+     } 
+button{
+  padding:26px;
+  margin:0px;
+  background:gray;
+  border:#4169E1;
+  font-size: 16px;
+}
+th{
+    padding-top:-20px;  
+    padding-bottom:40px;
+    color:#4169E1;
+  }  header
+    {
+    padding-bottom:15px;
+    margin-top: 0px;
+      height:100px;
+      width:100%;
+      background-color:#4169E1;
+      position:absolute;
+    }
+    footer{
+   background-color:rgb(0,0,0,0.9);
+     color:grey;
+     padding-left:0px;
+     padding-bottom:0px;
+       padding-top:0px;
+       padding-bottom: 0px;
+     width:100%;
+     margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-top: 0px;
+
+   }
+       </style>
+    </head>
+    <body>
+        <header>
+            <center><font style="color:#ADD8E6;font-size:60px;font-stretch:condensed;">IMAGES</font></center></br>
+            </br>
+            </br>
+            </br>
+        </header>
+<div id=imageform>
+        <div id=image><img src="/static/10103.jpeg" height="100%" width="900px" alt="not able to show"></div>
+       <div id=form><form action="{{url_for('through_images')}}" method="POST" enctype="multipart/form-data">
+            <table>
+            <tr><th colspan="2">Enter the values</th></tr>
+            <tr><td><label id=label1>IMAGE</label></td><td><input class="button2" accept=".gif,.jpg,.png,.jpeg,.tiff,.ico,image/*,video/*" type="file" name="image[]" placeholder="choose" value="choose" multiple></td></tr>
+            <tr><td><label id=label2>CAPACITY</label></td><td><input type="number" name="Capacity"  required></td></tr>
+            <tr><td colspan="2"><input type="submit" value="detect"></td></tr>
+            
+                
+            <!--<label>input value1</label><input type="number" name="trestbps"></br>
+            <label>input value2</label><input type="number" name="chol"></br>
+            <label>input value3</label><input type="number" name="thalach"></br>-->
+        
+            </table>
+        </form>
+    </div>
+</div>
+<footer>
+    <ul>
+  <li><a style= "color:grey" href="https://www.gmail.com">GMAIL</a></li>
+  </br>
+  <li><a style= "color:grey" href="https://www.facebook.com">FACEBOOK</a></li>
+  </br>
+  <li><a style= "color:grey" href="https://www.instagram.com">instagram</a></li>
+    </br>
+  <li>PLEASE FOLLOW</li>
+  </br>
+  </ul>
+  <ul>
+  <!--<li>mascellenios </li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>-->
+  </ul>
+  </footer>
+
+    </body>
+</html>

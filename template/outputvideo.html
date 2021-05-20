@@ -1,0 +1,123 @@
+<html>
+<head> 
+<title>Video Example</title>
+<style>
+      header{
+    padding-bottom:15px;
+    margin-top: 0px;
+      height:100px;
+      width:100%;
+      background-color:#4169E1;
+      position:absolute;
+    }
+    footer{
+   background-color:rgb(0,0,0,0.9);
+     color:grey;
+     padding-left:0px;
+     padding-bottom:0px;
+       padding-top:0px;
+       padding-bottom: 0px;
+     width:100%;
+     margin-right: 0px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-top: 150px;
+
+   }
+   #textmessagevideo{
+       display:inline-block;
+       height:360px;
+       width: 620px;
+       padding-top: 200px;
+       padding-left: 250px;
+       align-items: center;
+
+   }
+   #textmessage{
+       display: flex;
+   }
+   #textmessage > *{
+       flex-basis: 100%;
+   }
+   #button{
+    background:#4169E1;
+    border-radius: 5px;
+    border-color: #ADD8E6;
+  padding-top:10px;
+  padding-bottom:10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom:30px;
+  margin-left: 80px;
+  color:#ADD8E6;
+  align-items: center;
+   }
+</style>
+</head>
+<body>
+    <header>
+        <center><font style="color:#ADD8E6;font-size:60px;font-stretch:condensed;">VIDEO</font></center>
+        <button id=button><a href="/hellos">Home</a></button>
+        </br>
+        </br>
+        </br>
+    </header>
+    <div id=textmessagevideo>
+    <div id=textmessage>
+<div id=text><h2>Video After Processing</h2></div>
+    <div id=capacity>{% if capacity %}
+        <h2>limit:{{capacity}}</h2>
+    {% else %}
+        <h2>No data</h2>
+    {% endif %}</div>
+</div>
+<div id=video>
+<img src="/detecting" type="video/webm" height="342" width="608">
+</div>
+</div>
+<!--{% for item in rows %}                                                                                                                                                                         
+<h1>{{ item }}</h1>                                                                                                                                                                            
+{% endfor %}-->
+<!--{% if x %}
+    <h2>{{ x }}</h2>
+{% else %}
+    <h2>some thing wrong</h2>
+{% endif%}-->
+<!--{% with message=get_flashed_messages() %}
+    {% if message %}
+        {% for msg in message%}
+        <h2>{{msg}}</h2>
+        {% endfor %}
+    {% else %}
+        <h2>Capacity is Stable</h2>
+    {% endif %}
+{% endwith %}-->
+
+<!--<img src="{{url_for('through_videos')}}" height="340" width="560">-->
+<!--<video width="560" height="560" controls> <source src="/through_videos" type="video/webm"></video>-->
+<!--<td><input type="button" name="submit" palceholder="stop"></td>-->
+<footer>
+    <ul>
+  <li><a style= "color:grey" href="https://www.gmail.com">GMAIL</a></li>
+  </br>
+  <li><a style= "color:grey" href="https://www.facebook.com">FACEBOOK</a></li>
+  </br>
+  <li><a style= "color:grey" href="https://www.instagram.com">instagram</a></li>
+    </br>
+  <li>PLEASE FOLLOW</li>
+  </br>
+  </ul>
+  <ul>
+  <!--<li>mascellenios </li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>
+  <li>some thing</li>-->
+  </ul>
+  </footer>
+</body>
+</html>

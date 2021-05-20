@@ -1,0 +1,66 @@
+body
+{
+height:100%;
+width:600px; 
+
+}
+form{
+    border:1px solid grey;
+    height:480px;
+    width:300px;
+    padding-left:50px;
+    padding-top:50px;
+    padding-bottom:50px;
+    padding-right:50px;
+    margin-left:400px;
+    background:rgb(0,0,0,0.5);
+    border-radius: 20px;
+    margin-top:120px;
+  }
+table{
+  margin:50px;
+}
+  input{
+  width:100%;
+  margin-bottom:30px;
+  margin-right: 30px;
+    border:none;
+      border-bottom:1px solid white;
+    outline:none;
+    font-size:16px;
+    font-family:'Times New Roman';
+    
+    color:green;
+  }
+  .form .input .label{
+  
+    transition: .5%;
+  }
+  .form .input:focus ~label
+  {
+    top:-10px;
+  }
+  
+
+  label{
+    font-family:'Times New Roman';
+    position:absolute;
+    margin-left:10px;
+    margin-top:-40px;
+    margin-right:20px;
+  }
+  form input[type="submit"]{
+    background:;
+  padding-top:10px;
+  padding-bottom:0px;
+  margin-bottom:25px;
+    color:gray;
+    align:'center';
+  } 
+button{
+  padding:26px;
+  margin:0px;
+  background:gray;
+  border:black;
+  font-size: 16px;
+}
